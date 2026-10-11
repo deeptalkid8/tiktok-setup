@@ -1,45 +1,114 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WhatsApp Content Publisher is an automation project for publishing user-authorized video content to supported social media platforms.">
   <title>WhatsApp Content Publisher</title>
-  <meta name="description" content="A content publishing automation tool integrating WhatsApp, n8n, and social media platforms.">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #222;
+      background: #fff;
+    }
+    h1, h2 {
+      line-height: 1.3;
+    }
+    h1 {
+      border-bottom: 2px solid #222;
+      padding-bottom: 12px;
+    }
+    a {
+      color: #1456a0;
+    }
+    footer {
+      margin-top: 40px;
+      padding-top: 16px;
+      border-top: 1px solid #ddd;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
   <main>
     <h1>WhatsApp Content Publisher</h1>
+
     <p>
-      WhatsApp Content Publisher is an automation project
-      that helps authorized users publish their own videos
-      and captions to supported social media platforms.
+      WhatsApp Content Publisher is an automation project that helps
+      authorized users publish their own videos and captions to supported
+      social media platforms through a workflow managed with n8n.
+    </p>
+
+    <h2>Purpose of the Application</h2>
+    <p>
+      The application is designed to process videos and captions submitted
+      by users through WhatsApp and assist with publishing that content
+      to social media accounts authorized by the user.
     </p>
 
     <h2>How It Works</h2>
-    <p>
-      Users submit a video and caption through WhatsApp.
-      The n8n workflow validates the content and processes
-      the publication using the user's authorized account.
-    </p>
+    <ol>
+      <li>The user submits a video and caption through WhatsApp.</li>
+      <li>The workflow validates and processes the submitted content.</li>
+      <li>The workflow uses the relevant platform API and authorized
+          account credentials to attempt publication.</li>
+      <li>The publication status and available post URL are returned
+          to the user through WhatsApp.</li>
+    </ol>
 
     <h2>Data and Privacy</h2>
     <p>
-      The application processes submitted videos, captions,
-      and the account authorization data required for
-      publishing. Credentials are intended to be stored
-      securely and used only for the authorized workflow.
+      Depending on the platform and workflow configuration, the application
+      may process submitted videos, captions, account identifiers,
+      authentication tokens, publication status, and post URLs.
+      This information is used only to support the requested publishing
+      workflow and related troubleshooting.
+    </p>
+    <p>
+      Authentication credentials should be stored securely and must not
+      be exposed in public pages, logs, or messages. Data should be retained
+      only as needed for the intended operation and applicable requirements.
+      See the Privacy Policy for further information.
+    </p>
+
+    <h2>Supported Platforms</h2>
+    <p>
+      The project may integrate with social media platforms where suitable
+      official API access and permissions are available. Actual functionality
+      depends on each platform's API access, account eligibility, and
+      authorization requirements.
     </p>
 
     <h2>Policies</h2>
     <ul>
-      <li><a href="x-terms.html">Terms of Service</a></li>
-      <li><a href="x-privacy.html">Privacy Policy</a></li>
+      <li>
+        <a href="terms-of-service.html">Terms of Service</a>
+      </li>
+      <li>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </li>
     </ul>
 
+    <h2>Contact</h2>
     <p>
-      This is an independent project and is not affiliated
-      with or endorsed by X Corp.
+      For questions about this application, contact the application
+      administrator through the contact channel provided by its operator.
     </p>
   </main>
+
+  <footer>
+    <p>
+      This is an independent project. It is not affiliated with,
+      endorsed by, or sponsored by X Corp. or any other social media
+      platform.
+    </p>
+  </footer>
 </body>
 </html>
+```
